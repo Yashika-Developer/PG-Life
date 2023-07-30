@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8ab8095e8b.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" /> -->
+
+    <title>PGLife</title>
+</head>
+<style>
+    * {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    ul {
+
+        background-color: white;
+        position: sticky;
+        z-index: 1;
+        border: 1px solid black;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+
+    }
+
+    li {
+        display: inline-block;
+        width: 100px;
+        box-shadow: none;
+
+
+    }
+
+    .b {
+        position: relative;
+        left: 80%;
+        font-size: 20px;
+        padding-top: 8px; 
+        padding-bottom: 18px;
+        color: rgba(30, 28, 28, 0.634);
+        
+    }
+
+    ul li a {
+        color: rgba(30, 28, 28, 0.634);
+    }
+
+    .a {
+        height: 45px;
+    }
+
+    body {
+        background-image: url("./img/bg.png");
+        background-size: cover;
+        background-attachment: fixed;
+        /* image-resolution: 100%; */
+        height: auto;
+    }
+    
+
+    div{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding: 219px 24px;
+        font-size: 20px;
+        color: white;
+
+    }
+    h1{
+        color: white;
+    }
+
+    .city {
+        font-size: 20px;
+        padding: 15px;
+        box-shadow: 0 0 0 1000px #1c1c1c7a;
+
+    }
+
+    .fa-magnifying-glass {
+        background-color: rgb(80, 79, 79);
+        padding: 20px;
+        margin: -7px;
+    }
+    .container{
+       background-color:  white;
+       color: black;
+       font-size: 25px;
+       margin: auto;
+       padding: 45px;
+    }
+     .card{
+        display: inline;
+        position: relative;
+        padding: 2px;  
+    }
+    .city-img{
+        width: 9%; 
+        height: 60%;
+        margin: 10px;
+        border: 1px solid grey;
+        border-radius: 91px;
+        /* padding: 10px; */
+
+    }
+    .card:hover{
+        box-sizing: rgb(31, 31, 31) 0 0 5px 10px;
+        transition: .5px ease;
+    }
+     .row{
+        align-items: top;
+         margin: 0%;  
+        padding: 20px;
+    } 
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="pg.html"><img class="a" src="C:\pglife\img\logo.png"></li></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> 
+             <li class="b">
+                <i class="fa-solid fa-user-plus"></i>
+                <a href="#">Signup
+            </li></a> 
+
+            <li class="b">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <a href="#">login
+            </li></a>
+        </ul>
+    </nav>
+    <div class="c">
+        <h1 class="heading">Happiness per Square foot</h1>
+        <br><input type="text"  class="city" required placeholder="Enter your city to search for PGs"
+            size="46">
+        <i class="fa-solid fa-magnifying-glass"></i></button> 
+    </div>
+    <div class="container">
+        <h2>Major Cities</h2>
+        <div class="row">
+            <div class="card col-md">
+                <a href="property_list.html">
+                    <img src="img/delhi.png" class="city-img">
+                </a>
+                </div>
+                <div class="card col-md">
+                    <a href="property_list.html">
+                        <img src="img/mumbai.png" class="city-img">
+                    </a>
+                </div>
+                <div class="card col-md">
+                    <a href="property_list.html">
+                        <img src="img/bangalore.png" class="city-img">
+                    </a>
+                </div>
+                <div class="card col-md">
+                    <a href="property_list.html">
+                        <img src="img/hyderabad.png" class="city-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
